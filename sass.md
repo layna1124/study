@@ -107,7 +107,7 @@ p {
 - 불린연산 : && || ! 
 
 
-> Interpolation : #[}
+> Interpolation : #{}}
 : 프로퍼티값 물론 셀렉터와 프로퍼티명에 사용
 
 ~~~
@@ -157,7 +157,7 @@ $font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 
 
 
--@import
+@import
 
 분할된 파일을 partial라함. Sass 파일명의 선두에는 underscore(_)를 붙인다. 
 (_reset.scss, _module.scss, _print.scss)
@@ -176,5 +176,7 @@ $family: unquote("Droid+Sans");
 ~~~
 
 
-- 참고링크  <http://poiemaweb.com/sass-built-in-function>
+컴파일단축 <https://github.com/mitoolab/TIL/blob/master/CSS/sass-package.json.md>
+
+참고링크  <http://poiemaweb.com/sass-built-in-function>
 
