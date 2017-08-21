@@ -1,23 +1,35 @@
 
+자바스크립트는 7가지 데이터 타입 제공
+
++ 기본자료형 Data Type (자료형)
+  - Boolean
+  - null
+  - undefined
+  - Number
+  - String
+  - Symbol (New in ECMAScript 6)
++ 객체 : 가 대부분 
+
+
 # 자료형 (Data type)
 
 
 ## 기본자료형
 
-> 1. Boolean :
+> Boolean :
 - ture 와 false
 
-> 2. null :
+> null :
 -  정의가 되어있지 않은 data (0도 아니고, ""도 아닌 값)
 
-> 3. undefined :
+> undefined :
 - 선언은 되었지만 값을 할당하지 않은 변수가 가지는 값 
 
-> 4. number : 
+> number : 
 - 정수형과 실수형 (소수점)을 함께 표현한다.
 - NaN (숫자가 아니다. Not a number): 문자를 숫자로 나눈결과  
 
-> 5. String : 
+> String : 
 - 다국어를 지원할수 있는 문자 포맷 .유니코드 
 - 텍스트는 홀따옴표나 쌍따옴표로 묶는데 통일성 있어야함.
   (둘다쓸경우 ""밖에 '' , 혹은 '' 쓰고 ""로 묶기)
@@ -36,13 +48,12 @@ console.log(str); // Str이 나올것.
 - str = 을 써줌으로써 재할당 된것
 - 객체에 . 이 달린것 , 자바스크립트의 독특한 움직임. 기본자료형이 레퍼객체가 있어서 객체처럼 움직임. 
 
-> 6. Symbol
+> Symbol
 - 데이터를 심볼이라는 함수로 만듬 
 - es6 에서 추가된 타입 
 
 
 ## 객체형 (object type =참조형)
----
 
 - 가장 많이 쓰는것을 객체형. 자바스크립트는 타 언어들과 객체가 좀 다름. 
 - 객체안에는 데이터도 있고 함수도 있음
@@ -54,7 +65,7 @@ console.log(str); // Str이 나올것.
 
 - html 파싱할때 class는 dom을 변경되면 돔내에는 wrapper class가 따로있어 배열로 들어가(클래스는 띄어쓰기하고 여러개 쓰니까)
 
-
+<br>
 
 # 변수 
 - var 
@@ -171,21 +182,6 @@ function foo (){} 이 코드블럭은 하나의 독특한 방
 
 
 
-## 기타  
-
-- 노드환경 : server-side. vscode에서 출력되는거 노드의 환경 돔컨트롤 안되지만 네트워크 기능이 추가. 여러파일 하나씩 읽기   
-- 자바스크립트 엔진 : client-side. 돔을 컨트롤 할수있음. 크롬브라우저 개발자도구 콘솔, 윈도우에선 프롬프트라고 깜빡거림 
-- 위 둘이 중복되는 부분이 많아서 자바스크립트 엔지니어가 서버사이드로 이동하기 쉬워짐 
-
-
-#### REPL
-> "repl에서 돌려봐" : 터미널에서 노드환경 들어가서 코딩하는것   
-~~~
-$ node
-~~~
-
-- 기초문법 같아서 지금 vscode에 출력하면서 공부 가능
-
 
 # 연산자 ( Operator)
 
@@ -266,14 +262,17 @@ console.log(errMsg); // '아이디는 5자리 이상으로 입력하세요'
 
 ## 4. 논리연산자
 
-|| : 둘중 하나를 리턴 
+- OR (||)  모두 false여야 false
+- AND (&&) 하나만 false 여도 flase
+- NOT (!)
 ~~~
-var o2 = false || true;     // true
-var a2 = true && false;    // false
+a1 = false || true       // true
+a2 = false || (3 == 4)   // false
 
-var n1 = !true;  // false
-var n2 = !false; // true
-var n3 = !'Cat'; // false
+a3 = true  && false      // false
+
+n1 = !true; //false
+n2 = !'Cat'; //false
 ~~~
 
 

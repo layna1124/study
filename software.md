@@ -48,6 +48,15 @@
 - 일반화 / 추상화(generalization / abstraction)
 - 알고리즘(algorithms) 그려보기 
 
+ex) 집에서 학원까지 가기
+문제분해 : 학원에 가야한다. 
+          - 버스를 탄다 : 몇번 버스를 탈것인가? 갈아탈것인가?
+          - 걷는다 : 걸어갈수 있는가? 얼마나 걸릴까?
+패턴인지 : 학원에 도착 = true 
+일반화/추상화 : 학원에 가려면 10번 버스를 타고 8번으로 갈아타야함. 
+
+
+
 <hr>
 
 ## Software development lift cycle
