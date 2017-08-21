@@ -126,51 +126,6 @@ Javascript Syntax Basics
 
 
 
-> eslint 설치 
-
-- 선생님 사이트 (설치방법)
-https://github.com/ungmo2/FCS-FE/blob/master/dev-env/vscode/eslint.md
-- .eslintrc.js 파일만들기 (이름앞에 .을써야해) 
-~~~
-module.exports = {
-    "env": {
-        "browser": true,
-        "commonjs": true, 
-        "es6": true,
-        "node": true,
-        "jquery": true
-    },
-    "extends": "airbnb-base",
-    "plugins": [ "import" ],
-    "rules": { 
-        // 0 "off", 1 "warn" 2 "error"  여기가 내설정 
-        "no-console": 1,
-        "quotes": [ 2, "single" ],
-        "no-underscore-dangle": 1,
-        "no-plusplus": [ 2, { "allowForLoopAfterthoughts": true }],
-        "comma-dangle": [ 2, "never"],
-        "no-var" : 0 //var 라는 명령어 치면 단축을 할당했는데 eslint에서는 6버전을 지원해서 빨강 줄이 그렁지는데 일단 지운거
-    }
-};
-~~~
-- g로 깔지말고 폴더에 까기 
-- 에디터 완전껐다키기
-- main.js파일 만들어서 빨간줄나오나 테스트. 
-- !노랑색이면 다시 설치 
-~~~
-$ npm uninstall -g eslint  /*전역설치지우기*/
-$ npm cache clean verify   /*오류..뭔가충돌나네*/
-$ cd fast  /*폴더로이동 (현재여기설치)*/
-$ npm install --save eslint  /*다시설치*/
-
-$ eslint -v /*버전확인*/
-~~~
-
-- 빨간줄나오면 정상설치 
-- 오류난 알림 복사해서 http://eslint.org/ 페이지에 가서 오류난거 찾아보기 
-
-
-
 > 표현식
 : 값 하나로 수용
 
@@ -235,3 +190,17 @@ a3 = true  && false      // false
 ~~~
 
 
+
+## 기타  
+
+- 노드환경 : server-side. vscode에서 출력되는거 노드의 환경 돔컨트롤 안되지만 네트워크 기능이 추가. 여러파일 하나씩 읽기   
+- 자바스크립트 엔진 : client-side. 돔을 컨트롤 할수있음. 크롬브라우저 개발자도구 콘솔, 윈도우에선 프롬프트라고 깜빡거림 
+- 위 둘이 중복되는 부분이 많아서 자바스크립트 엔지니어가 서버사이드로 이동하기 쉬워짐 
+
+
+#### REPL
+> "repl에서 돌려봐" : 터미널에서 노드환경 들어가서 코딩하는것   
+~~~
+$ node
+~~~
+- 기초문법은 같기때문에 vscode에 출력하면서 보는데 문제없음
