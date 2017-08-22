@@ -15,6 +15,10 @@
 - javascript-6 : Built-in Object, 정규표현식, Array  
 - javascript-7 : Dom, Ajax  
 
+- jquery.md : jquery, jqeury ajax 
+- es6.md : 
+
+
 컴퓨터공학
 
 - sofrware : 	software Engineering, Development process
